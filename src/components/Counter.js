@@ -11,17 +11,18 @@ export class Counter extends Component {
         }
       }
       IncrementCount=()=>{
-         this.setState({Count: this.state.Count + 1}); 
+         this.setState({ Count: this.state.Count + 1 }); 
       };
-
   render() {
-    const {Count} = this.state;
+    const { Count } = this.state;
     return (
       <div>
-        <button onMouseEnter={this.IncrementCount}>incremented to {Count}</button>
+        <button onMouseEnter={this.IncrementCount}>
+         The user incremented to { Count } 
+        </button>
       </div>
     )
   }
 }
 
-export default UpdatedCom{ Counter };
+export default UpdatedComp(Counter);

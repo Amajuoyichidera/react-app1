@@ -1,12 +1,11 @@
 import React from 'react';
 
-const UpdatedComp = originalComp => {
+const UpdatedComp = OriginalComp => {
     class NewComp extends React.Component {
         render() {
-            returns <originalComp name="The user" />;
+            return <OriginalComp name="The user" />;
         }
     }
-        return NewComp;
+    return NewComp;
     };
-
 export default UpdatedComp;
